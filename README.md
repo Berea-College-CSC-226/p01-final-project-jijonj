@@ -24,7 +24,7 @@ helped you, AI tools you've used, and any other resources that are not solely yo
 
 **Purpose**: `A playable piano that can be played with the computer keyboard.`
 
-**Source Assignment(s)**: `HW05 - Funky Functions and Fun Exams, HW08 - It's in Your Genes, HW09 - UPC Barcodes`
+**Source Assignment(s)**: `chapter_6_suite.py, hw05_funky_functions.py, hw08_genes.py, hw09_upc_classes.py`
 
 **CRC Card(s)**:
   - Create a CRC card for each class that your project will implement.
