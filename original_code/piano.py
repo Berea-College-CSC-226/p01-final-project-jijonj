@@ -14,6 +14,7 @@ class Piano:
         self.label = StringVar()
         self.intvar = IntVar()
 
+
     def create_piano_buttons(self):
         column_num = 1
         for i in self.notes:
