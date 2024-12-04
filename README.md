@@ -56,7 +56,7 @@ Reflect on what you’ve done so far. How’s it going? Are you feeling behind/a
 What has surprised you so far? Describe your general feelings. Be honest with yourself; this section is for you, not me.
 
 ```
-    **Replace this text with your reflection
+    the key binds is the thing that is worrying me
 ```
 
 ---
@@ -65,14 +65,15 @@ What has surprised you so far? Describe your general feelings. Be honest with yo
 
 Indicate what percentage of the project you have left to complete and how confident you feel. 
 
-❗️**Completion Percentage**: `0 - 100%`
+**Completion Percentage**: `55%`
 
-❗️**Confidence**: Describe how confident you feel about completing this project, and why. Then, describe some 
+**Confidence**: Describe how confident you feel about completing this project, and why. Then, describe some 
   strategies you can employ to increase the likelihood that you'll be successful in completing this project 
   before the deadline.
 
 ```
-    **Replace this text with your reflection
+    even though my percentage is not where I want it to be, I still believe I can complete most of the things that I want to implement into the program.
+    I believe if that I assign more time into the interface of the program and focus less on more complex code, that I will complete the majority of my program.
 ```
 
 ---

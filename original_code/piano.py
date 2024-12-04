@@ -1,6 +1,7 @@
 from betterplaysound import *
 from tkinter import *
 import threading
+from multiprocessing import Process
 
 class Piano:
 
@@ -8,6 +9,8 @@ class Piano:
              "D#":"python_grand_piano/Dsharpgrand.wav", "E":"python_grand_piano/Egrand.wav", "F":"python_grand_piano/Fgrand.wav",
              "F#":"python_grand_piano/Fsharpgrand.wav", "G":"python_grand_piano/Ggrand2.wav", "G#":"python_grand_piano/Gsharpgrand2.wav",
              "A":"python_grand_piano/Agrand2.wav", "A#":"python_grand_piano/Asharpgrand2.wav", "B":"python_grand_piano/Bgrand2.wav"}
+
+    keys = {"a", "w", "s", "e", "d", "f", "t", "g", "y", "h", "u", "j"}
 
     def __init__(self):
 
@@ -17,6 +20,10 @@ class Piano:
         self.button = None
         self.label = StringVar()
         self.intvar = IntVar()
+
+        # for i in self.notes.keys():
+
+        self.root.bind("a", lambda event, note="A": self.piano_press(event,note))
 
     def create_piano_buttons(self):
         column_num = 1
@@ -46,16 +53,23 @@ class Piano:
         else:
             return None
 
-    def create_note_command(self, note):
+    def create_note_command(self,note):
         def command():
             self.play_note(note)
 
         return command
 
+    def piano_press(self, event, note):
+        note = self.get_right_audio(note)
+        self.play_note(note)
+
     def play_note(self, note):
 
-        x = threading.Thread(target=playsound, args=(note,))
+        # x = threading.Thread(target=playsound, args=(note,))
+        # x.start()
+        x = Process(target=playsound, args=(note,))
         x.start()
+
 
 
 def main():
