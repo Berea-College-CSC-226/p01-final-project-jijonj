@@ -12,7 +12,7 @@ class Piano:
 
     keys = {"a", "w", "s", "e", "d", "f", "t", "g", "y", "h", "u", "j"}
 
-    def __init__(self):
+    def __init__(self): # FIXME KEY BINDS NEED TO BE RESET
 
         self.root = Tk()
         self.key = []
@@ -22,6 +22,7 @@ class Piano:
         self.intvar = IntVar()
 
         # for i in self.notes.keys():
+
 
         self.root.bind("a", lambda event, note="A": self.piano_press(event,note))
 
@@ -65,8 +66,6 @@ class Piano:
 
     def play_note(self, note):
 
-        # x = threading.Thread(target=playsound, args=(note,))
-        # x.start()
         x = Process(target=playsound, args=(note,))
         x.start()
 
